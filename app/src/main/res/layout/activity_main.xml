@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovopc.myapplication.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="multipleImages"
+        android:textColor="#00BCD4"
+        android:textSize="18sp" />
+
+    <!-- Button to Open Custom gallery -->
+    <Button
+        android:id="@+id/openCustomGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:text="Open Gallery"
+        android:textColor="#009688"
+        android:textSize="15sp" />
+
+      <!--  Grid View to display Selected Images-->
+    <include
+        android:id="@+id/selectedImagesGridView"
+        layout="@layout/gridview_layout"
+        android:layout_width="388dp"
+        android:layout_height="420dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/openCustomGallery" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="#616161" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="selectedImages"
+        android:textColor="#9e9e9e"
+        android:textSize="14sp" />
+
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_select"
+        android:text="Select Image"/>-->
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:text="Convert"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="@id/selectedImagesGridView"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

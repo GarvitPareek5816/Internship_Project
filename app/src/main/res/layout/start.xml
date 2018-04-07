@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovopc.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/scannedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="96dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="50dp"
+            android:text="CAMERA Click Picture"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!--<Button
+            android:id="@+id/crop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="110dp"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:gravity="center"
+            android:text="IMAGE CROP" />-->
+
+        <Button
+            android:id="@+id/crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Crop"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/compress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPRESSION"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/onepdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Page PDF"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/PDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi Page PDF"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/OCR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OCR"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/QR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Status"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/PDFextract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDF Split"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+-->
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/splitall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Status"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="95dp"
+            android:width="180dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+-->
+
+
+
+</android.support.constraint.ConstraintLayout>
